@@ -1,0 +1,17 @@
+{
+  "name": "brutal-expense-tracker",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "npm run dev --prefix frontend",
+    "dev:backend": "npm run dev --prefix backend",
+    "dev:full": "npm run dev:backend & npm run dev",
+    "test": "npm test --prefix frontend && npm test --prefix backend",
+    "lint": "npm run lint --prefix frontend",
+    "db:test": "npm test --prefix backend",
+    "build": "npm run build --prefix frontend",
+    "preview": "npm run preview --prefix frontend",
+    "db:init": "npm run db:init --prefix backend",
+    "install:all": "npm install --prefix frontend && npm install --prefix backend"
+  }
+}

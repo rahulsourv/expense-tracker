@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #FFFDF5;
+    background-image: radial-gradient(#121212 0.75px, transparent 0.75px);
+    background-size: 20px 20px;
+    color: #121212;
+  }
+}
+
+@layer components {
+  .brutal-card {
+    @apply bg-white border-2 border-black shadow-brutal transition-all duration-150;
+  }
+
+  .brutal-card-hover {
+    @apply brutal-card hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-brutal-lg;
+  }
+
+  .brutal-btn {
+    @apply font-bold border-2 border-black shadow-brutal active:translate-x-1 active:translate-y-1 active:shadow-none hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-brutal-lg transition-all duration-150 inline-flex items-center justify-center gap-2;
+  }
+
+  .brutal-btn-sm {
+    @apply text-xs font-bold px-2.5 py-1 border-2 border-black shadow-brutal-sm active:translate-x-0.5 active:translate-y-0.5 active:shadow-none transition-all duration-150 inline-flex items-center justify-center gap-1.5;
+  }
+
+  .brutal-input {
+    @apply w-full bg-white border-2 border-black p-2.5 font-medium shadow-brutal-sm focus:outline-none focus:ring-2 focus:ring-black focus:shadow-brutal transition-all;
+  }
+
+  .brutal-badge {
+    @apply inline-flex items-center gap-1 font-mono text-xs font-bold uppercase tracking-wider px-2 py-0.5 border border-black shadow-[1px_1px_0px_0px_rgba(0,0,0,1)];
+  }
+}
+
+/* Custom crisp scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FFFDF5;
+  border-left: 2px solid #000;
+}
+::-webkit-scrollbar-thumb {
+  background: #FFE600;
+  border: 2px solid #000;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FF6B8B;
+}

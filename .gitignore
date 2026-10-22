@@ -1,0 +1,11 @@
+node_modules/
+dist/
+*.log
+
+# Local credentials and environment overrides
+.env
+.env.*
+!**/.env.example
+
+# Keep the frontend local environment file private as well.
+frontend/.env.local
